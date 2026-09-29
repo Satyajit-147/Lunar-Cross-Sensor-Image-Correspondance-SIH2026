@@ -197,4 +197,4 @@ Results — including side-by-side match visualizations, warped false-color over
 
 **GradientZero** — Smart India Hackathon 2026, Problem Statement 26166 (ISRO / Department of Space)
 
-**Members:** Satyajit, Keerthivasan, Sanjay, Pranav
+**Members:** Satyajit, Keerthivasan, Sanjay, Pranav, Narayana Murthy, Bhavya
