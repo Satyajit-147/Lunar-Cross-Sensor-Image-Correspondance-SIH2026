@@ -6,17 +6,35 @@
 *"Multi-modal, Sun angle and scale invariant image correspondence using Chandrayaan-2 optical images (OHRC, TMC and IIRS)"*
 Organisation: Indian Space Research Organisation (ISRO), Department of Space | Category: Software | Theme: Space Technology
 **Team:** GradientZero
-**Live Dashboard:** https://webdev-jade-nine.vercel.app/dashboard/index.html
+**Live Dashboard:** [View Interactive Results Here](https://webdev-jade-nine.vercel.app/dashboard/index.html)
 
 ---
 
-## 📦 Dataset Note — Read Before Running
+## 📦 Setup & Running Locally
 
+### 1. Clone & Install
+```bash
+git clone https://github.com/Satyajit-147/Lunar-Cross-Sensor-Image-Correspondance-SIH2026.git
+cd Lunar-Cross-Sensor-Image-Correspondance-SIH2026
+pip install -r requirements.txt
+```
+
+### 2. Download & Organize the Dataset
 The OHRC source images and LRO NAC reference images used in this project are **high-resolution TIFF/PDS files** and are too large to include directly in this repository. All source and reference imagery used to produce the results below has been zipped and uploaded separately.
 
 **Drive link:** [Download Dataset Archive](https://drive.google.com/file/d/1phHVbW06AWaiMw1vAN8WkYKTnZknLfuK/view?usp=drive_link)
 
-Unzip the archive into `data/source/` (OHRC) and `data/reference/` (LRO NAC) before running the pipeline — the paths expected by `run_benchmark.py` assume this layout.
+Extract the archive and organize the files directly into the `data/` directory exactly according to the layout expected by the pipeline:
+- Place OHRC TIFF files into `data/ohrc/`
+- Place LRO NAC TIFF files into `data/lro_nac/`
+- Place the DEM file into `data/dem/coarse_dem.tif`
+
+### 3. Run the Benchmark Pipeline
+Once the data is organized, execute the strict Phase-2 pipeline with both descriptors across all test cases:
+```bash
+python3 run_benchmark.py --descriptor sift rift2 --phase 2
+```
+Results (including side-by-side match visualizations and warped false-color overlays) will be written to `final_run/`.
 
 ---
 
@@ -170,19 +188,6 @@ In the interest of the same honesty applied to the results above:
 - **No coarse global alignment stage.** The current pipeline does not run a Fourier-Mellin or phase-correlation pre-alignment step to bound the search region before fine matching. This worked across the tested scale ratios and footprints, but has not been stress-tested against very large initial translation offsets between source and reference.
 - **Final registration uses a 2D homography, not full orthorectification.** `cv2.warpPerspective` assumes the scene is well-approximated by a single flat plane. The DEM used for the Level-1 gate is not yet reused for per-pixel orthorectification, so local misregistration proportional to terrain relief is expected around the steepest crater walls.
 - **The Lambertian render does not model cast shadows.** It reproduces facet-orientation shading (a slope tilted toward the sun brightens) but not ray-traced occlusion shadows from neighbouring terrain, which is part of why the most extreme grazing-angle case (TC-04) still relies heavily on the Phase Congruency stage rather than the render alone.
-
----
-
-## 7. How to Run
-
-```bash
-pip install -r requirements.txt
-
-# Run the strict Phase-2 pipeline with both descriptors
-python3 run_benchmark.py --descriptor sift rift2 --phase 2
-```
-
-Results — including side-by-side match visualizations, warped false-color overlays, and the raw CSV metric tables backing the table in Section 5 — are written to `final_run/`.
 
 ---
 
