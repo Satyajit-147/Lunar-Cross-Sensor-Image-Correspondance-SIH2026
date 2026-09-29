@@ -6,7 +6,7 @@
 *"Multi-modal, Sun angle and scale invariant image correspondence using Chandrayaan-2 optical images (OHRC, TMC and IIRS)"*
 Organisation: Indian Space Research Organisation (ISRO), Department of Space | Category: Software | Theme: Space Technology
 **Team:** GradientZero
-**Live Dashboard:** [View Interactive Results Here](#) *(Replace # with your deployed Netlify link)*
+**Live Dashboard:** https://webdev-jade-nine.vercel.app/dashboard/index.html
 
 ---
 
