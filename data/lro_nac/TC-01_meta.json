@@ -1,0 +1,12 @@
+{
+  "id": "TC-01",
+  "label": "MODERATE_LIGHTING_DIFF",
+  "nac_product": "M1169446437LC",
+  "description": "Moderate lighting difference \u2014 incidence 86.88\u00b0",
+  "gsd": 0.5,
+  "sun_azimuth": 185.0,
+  "sun_elevation": 3.12,
+  "incidence_angle": 86.88,
+  "expected_phase1": "PASS",
+  "expected_phase2": "PASS"
+}

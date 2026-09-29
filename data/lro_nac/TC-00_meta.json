@@ -1,0 +1,12 @@
+{
+  "id": "TC-00",
+  "label": "BASELINE_SIMILAR_LIGHTING",
+  "nac_product": "M142050286LC",
+  "description": "Same area, incidence ~82\u00b0 \u2014 closest to OHRC",
+  "gsd": 0.5,
+  "sun_azimuth": 178.0,
+  "sun_elevation": 8.0,
+  "incidence_angle": 82.0,
+  "expected_phase1": "PASS",
+  "expected_phase2": "PASS"
+}

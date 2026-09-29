@@ -1,0 +1,19 @@
+{
+  "product_id": "M1122334457LC",
+  "center_lat": -81.0,
+  "center_lon": 38.0,
+  "gsd": 0.5,
+  "sun_azimuth": 343.3832686087319,
+  "sun_elevation": 6.991340749668833,
+  "incidence_angle": 82.71,
+  "bbox": {
+    "min_lat": -82.0,
+    "max_lat": -80.0,
+    "min_lon": 36.0,
+    "max_lon": 40.0
+  },
+  "image_size": [
+    1000,
+    1000
+  ]
+}

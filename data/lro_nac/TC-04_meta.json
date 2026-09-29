@@ -1,0 +1,12 @@
+{
+  "id": "TC-04",
+  "label": "VERY_GRAZING_ANGLE",
+  "nac_product": "M1123197759LC",
+  "description": "Same area, very low sun (near terminator) \u2014 hard case",
+  "gsd": 0.5,
+  "sun_azimuth": 195.0,
+  "sun_elevation": 1.5,
+  "incidence_angle": 88.5,
+  "expected_phase1": "MARGINAL",
+  "expected_phase2": "MARGINAL"
+}

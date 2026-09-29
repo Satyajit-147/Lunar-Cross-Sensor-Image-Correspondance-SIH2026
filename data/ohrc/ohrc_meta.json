@@ -1,0 +1,11 @@
+{
+  "gsd": 0.25,
+  "sun_azimuth": 175.0,
+  "sun_elevation": 12.0,
+  "bounding_box": {
+    "min_lat": -84.798913,
+    "max_lat": -83.998788,
+    "min_lon": 31.186427,
+    "max_lon": 35.822751
+  }
+}

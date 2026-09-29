@@ -1,0 +1,12 @@
+{
+  "id": "TC-03",
+  "label": "LARGE_LIGHTING_DIFF",
+  "nac_product": "M1109070464LC",
+  "description": "Large lighting difference \u2014 incidence ~85.5\u00b0",
+  "gsd": 0.5,
+  "sun_azimuth": 192.0,
+  "sun_elevation": 4.5,
+  "incidence_angle": 85.5,
+  "expected_phase1": "MARGINAL",
+  "expected_phase2": "MARGINAL"
+}

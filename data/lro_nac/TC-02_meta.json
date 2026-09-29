@@ -1,0 +1,12 @@
+{
+  "id": "TC-02",
+  "label": "DIFFERENT_LIGHTING",
+  "nac_product": "M1146747002RC",
+  "description": "Different lighting \u2014 incidence ~84\u00b0",
+  "gsd": 0.5,
+  "sun_azimuth": 182.0,
+  "sun_elevation": 6.0,
+  "incidence_angle": 84.0,
+  "expected_phase1": "PASS",
+  "expected_phase2": "PASS"
+}

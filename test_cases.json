@@ -1,0 +1,34 @@
+{
+  "source": {
+    "image": "data/ohrc/ohrc_source.tif",
+    "meta": "data/ohrc/ohrc_meta.json"
+  },
+  "dem": "data/dem/coarse_dem.tif",
+  "test_cases": [
+    {
+      "id": "TC-00",
+      "image": "data/lro_nac/TC-00_nac.tif",
+      "meta": "data/lro_nac/TC-00_meta.json"
+    },
+    {
+      "id": "TC-01",
+      "image": "data/lro_nac/TC-01_nac.tif",
+      "meta": "data/lro_nac/TC-01_meta.json"
+    },
+    {
+      "id": "TC-02",
+      "image": "data/lro_nac/TC-02_nac.tif",
+      "meta": "data/lro_nac/TC-02_meta.json"
+    },
+    {
+      "id": "TC-03",
+      "image": "data/lro_nac/TC-03_nac.tif",
+      "meta": "data/lro_nac/TC-03_meta.json"
+    },
+    {
+      "id": "TC-04",
+      "image": "data/lro_nac/TC-04_nac.tif",
+      "meta": "data/lro_nac/TC-04_meta.json"
+    }
+  ]
+}
