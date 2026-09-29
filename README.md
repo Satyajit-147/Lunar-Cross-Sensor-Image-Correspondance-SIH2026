@@ -1,4 +1,4 @@
-# DEM-Verified Lunar Image Correspondence
+# LunaMorph
 
 ### Sun-Angle & Scale Invariant Registration of Chandrayaan-2 OHRC Imagery Against LRO NAC Reference Data
 
