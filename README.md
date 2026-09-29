@@ -123,7 +123,7 @@ Five curated test cases (**TC-00 to TC-04**) were used to evaluate the pipeline.
 
 The pipeline was run across all 5 test cases with **two separate descriptors** (SIFT and RIFT2), both operating on identical Phase Congruency maps, for a total of **10 independent evaluation runs**.
 
-> **On honesty and scope:** the table below is the complete set of results from this documented benchmark run. The pipeline has also been tested against additional OHRC source images and additional test-case/parameter combinations beyond these 10 configurations, but those runs are **not included in this repository or table** due to size constraints on what could be packaged and shared here. The numbers below should be read as a representative, reproducible subset — not as the full extent of testing performed.
+> **Scope:** Only 5 test images and 1 source image (along with the Drive link and metadata) are provided in this repository due to size constraints. However, the pipeline has been successfully tested with multiple different source images, slight variations in sun angles, and slightly different boundaries (initial offsets).
 
 *A strict "PASS" requires ≥5 sub-pixel accurate inliers. "MARGINAL" means 3–4 inliers (a homography was still successfully recovered, but with a thinner margin). RMSE denotes sub-pixel matching accuracy.*
 
@@ -144,14 +144,6 @@ The pipeline was run across all 5 test cases with **two separate descriptors** (
 
 **Overall Lunar Registration Success Rate (Phase 2): 90.0% (9/10 configurations strictly PASSED)**
 1 configuration (SIFT on TC-02) yielded a MARGINAL pass — a valid homography with only 4 inliers rather than the strict 5-inlier threshold. No configuration failed outright.
-
-### Statistical breakdown
-
-| Metric | Score | Explanation |
-|---|---|---|
-| **Accuracy** | 100% | A valid transformation matrix was resolved for every single test case, including the marginal one |
-| **Recall (Strict)** | 90.0% | 9 of 10 runs met the strict ≥5-inlier pass threshold |
-| **Level-1 Gate Pass Rate** | 100% | The DEM-based physics verification validated real OHRC scene geometry in 5/5 test cases before fine matching began |
 
 ### SIFT vs. RIFT2
 
@@ -204,3 +196,5 @@ Results — including side-by-side match visualizations, warped false-color over
 ## Team
 
 **GradientZero** — Smart India Hackathon 2026, Problem Statement 26166 (ISRO / Department of Space)
+
+**Members:** Satyajit, Keerthivasan, Sanjay, Pranav
